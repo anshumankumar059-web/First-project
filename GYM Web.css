@@ -1,0 +1,486 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+/* Background */
+body{
+    background-color: black;
+    background-size:cover;
+}
+.bbb{
+background-image:url(https://wallpapercave.com/wp/wp2333032.jpg);
+height:100vh;
+background-size:cover;
+background-position:center;
+}
+
+/* Navigation */
+nav{
+display:flex;
+justify-content:flex-end;
+padding:20px;
+}
+
+.btn{
+background:transparent;
+color:white;
+border:2px solid white;
+padding:10px 20px;
+margin-left:10px;
+cursor:pointer;
+font-size:16px;
+}
+
+.btn:hover{
+background:white;
+color:black;
+}
+
+#logo{
+padding-right:64%;
+margin-left:10%;
+}
+
+/* Headings */
+h1{
+color:white;
+font-size:50px;
+text-align:center;
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h4{
+font-weight:lighter;
+font-family:cursive;
+padding-bottom:30px;
+color:white;
+font-size:30px;
+text-align:center;
+word-spacing: 10px;
+}
+
+/* Container */
+.container{
+width:90%;
+margin:60px auto;
+display:flex;
+gap:25px;
+}
+
+/* Card */
+.card{
+width:33.33%;
+height:350px;
+perspective:1000px;
+}
+
+.card-inner{
+position:relative;
+width:100%;
+height:100%;
+transition:transform 0.8s;
+transform-style:preserve-3d;
+}
+
+.card:hover .card-inner{
+transform:rotateY(180deg);
+}
+
+/* Front */
+.card-front{
+position:absolute;
+width:100%;
+height:100%;
+backface-visibility:hidden;
+}
+
+.card-front img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+.card-front h2{
+position:absolute;
+bottom:20px;
+width:100%;
+text-align:center;
+color:white;
+font-size:28px;
+background:rgba(0,0,0,0.5);
+padding:10px;
+}
+
+/* Back */
+
+.card-back{
+position:absolute;
+width:100%;
+height:100%;
+transform:rotateY(180deg);
+backface-visibility:hidden;
+}
+
+.card-back img{
+width:100%;
+height:100%;
+object-fit:cover;
+position:absolute;
+}
+
+.card-back p{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+color:white;
+background:rgba(0,0,0,0.6);
+padding:20px;
+text-align:center;
+width:85%;
+max-height:80%;
+overflow:auto;
+font-size:14px;
+line-height:1.5;
+word-spacing:3px;
+border-radius:10px;
+}
+/* =============================process-Price-Table=========================== */
+.hero{
+    padding: 50px;
+   
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    background: url(https://png.pngtree.com/thumb_back/fh260/background/20231024/pngtree-inky-ebony-texture-image_13705864.png);
+    background-size: 200% 200%;
+}
+
+.hero h1{
+    font-size: 44px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    word-spacing: 5px;
+}
+.hero p{
+    font-size: 18px;
+    margin-top: 10px;
+}
+.hero button{
+    margin-top: 20px;
+    padding: 10px 30px;
+    color: white;
+    background: red;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.hero button:hover{
+    background: orange;
+    color: white;
+    transform: scale(1.1);
+}
+.member{
+    height: 450px;
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+.member h1{
+    font-size: 44px;
+    margin: 30px;
+    font-family: 'Trebuchet MS',monospace;
+    word-spacing: 15px;
+}
+.member p{
+    font-size: 18px;
+    margin-top: 10px;
+}
+.member button{
+    margin-top: 20px;
+    padding: 10px 30px;
+    color: white;
+    background: red;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.member button:hover{
+    background: orange;
+    color: white;
+    transform: scale(1.1);
+}
+.table-container{
+width:90%;
+margin:auto;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+background:lightgray;
+}
+
+th{
+background:#d10f2f;
+color:white;
+padding:15px;
+font-size:18px;
+text-align:center;
+}
+td{
+padding:15px;
+border-bottom:1px solid #ddd;
+text-align:center;
+color:#555;
+}
+
+
+.strike{
+text-decoration:line-through;
+color:gray;
+}
+
+
+tr:hover{
+background:#f7f7f7;
+}
+/* ==================About Section================= */
+.about{
+    text-align: center;
+    padding: 150px;
+    margin: 50px;
+    padding-bottom: 40px;
+    color:white;
+    font-weight: 100;
+}
+.about p{
+    margin: 10px;
+    color: yellow;
+}
+/* NEW CONTAINER FOR IMAGE + TEXT */
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    padding: 80px;
+    margin: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+/* IMAGE STYLE */
+.img img{
+border-radius:30px;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+transition: 0.5s;
+cursor: pointer;
+}
+.img img:hover{
+   transform: translateY(-12px);
+   box-shadow: 10px 10px 5px yellow; 
+}
+
+/* TEXT CONTENT */
+.about-content{
+    max-width: 600px;
+    color:white;
+    margin: 40px;
+}
+.about-content h1{
+    margin: 30px;
+}
+.about-content p{
+    word-spacing: 5px;
+    font-size: larger;
+}
+.about-content h4{
+    color: orange;
+}
+
+.box:hover{
+    transform: translateY(-12px);
+    box-shadow: 0 10px 25px rgb(219, 125, 2);
+}
+
+/* ========================================CONTACT===================================== */
+/* CONTACT SECTION */
+
+.contact{
+    padding:100px 10%;
+    background: linear-gradient(135deg,#000000,#1a1a1a);
+    color:white;
+    text-align:center;
+}
+
+.contact h1{
+    font-size:42px;
+    margin-bottom:10px;
+    letter-spacing:2px;
+}
+
+.contact p{
+    margin-bottom:50px;
+    color:#cccccc;
+}
+
+/* CONTAINER */
+
+.contact-container{
+    display:flex;
+    justify-content:center;
+    gap:60px;
+    flex-wrap:wrap;
+}
+
+/* CONTACT INFO CARD */
+
+.contact-info{
+    max-width:320px;
+    text-align:left;
+    padding:30px;
+    /* background:rgba(255,255,255,0.05); */
+    border-radius:15px;
+    backdrop-filter: blur(8px);
+    /* box-shadow:0 10px 25px rgba(0,0,0,0.5); */
+     box-shadow:0 0 8px red;
+    transition:0.3s;
+}
+
+.contact-info:hover{
+    transform:translateY(-10px);
+}
+
+.contact-info h3{
+    margin-bottom:20px;
+    font-size:24px;
+    color:#ff3c3c;
+}
+
+.contact-info p{
+    margin:12px 0;
+    font-size:16px;
+}
+
+/* CONTACT FORM */
+
+.contact-form{
+    display:flex;
+    flex-direction:column;
+    width:380px;
+    padding:30px;
+    background:rgba(255,255,255,0.05);
+    border-radius:15px;
+    backdrop-filter: blur(8px);
+    /* box-shadow:0 10px 25px rgba(0,0,0,0.5); */
+    box-shadow:0 0 8px red;
+}
+
+/* INPUTS */
+
+.contact-form input,
+.contact-form textarea{
+    margin-bottom:18px;
+    padding:14px;
+    border:none;
+    border-radius:8px;
+    outline:none;
+    background:#111;
+    color:white;
+    border:1px solid #333;
+    transition:0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+    border-color:red;
+    box-shadow:0 0 8px red;
+}
+
+.contact-form textarea{
+    height:130px;
+}
+
+/* BUTTON */
+
+.contact-form button{
+    padding:14px;
+    background:linear-gradient(45deg,red,orange);
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.contact-form button:hover{
+    transform:scale(1.08);
+    box-shadow:0 8px 20px rgba(255,0,0,0.6);
+}
+/* MAP */
+
+.map{
+width:100%;
+}
+/* FOOTER */
+
+footer{
+background:#111;
+color:white;
+padding:50px 10%;
+}
+
+.footer-container{
+display:flex;
+justify-content:space-between;
+flex-wrap:wrap;
+gap:40px;
+}
+
+.footer-links a{
+display:block;
+color:white;
+text-decoration:none;
+margin:5px 0;
+}
+
+.footer-links a:hover{
+color:orange;
+}
+
+.footer-social a{
+    text-decoration:none;
+    font-size:15px;
+    margin:15px;
+    color:white;
+    padding:15px;
+    border-radius:50%;
+    cursor: pointer;
+    word-spacing: 10px;
+}
+
+
+.footer-social a:hover{
+color:orange;
+}
+
+.copyright{
+    text-align:center;
+    margin-top:30px;
+    color:gray;
+    background-color: #2a2a2a;
+    padding: 25px;
+}
+
